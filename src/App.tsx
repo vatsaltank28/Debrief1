@@ -8,6 +8,7 @@ import { TopBar } from './components/TopBar';
 import { NoteList } from './components/NoteList';
 import { NoteInput } from './components/NoteInput';
 import { SummaryPanel } from './components/SummaryPanel';
+import { GroupChat } from './components/GroupChat';
 import { Plus } from 'lucide-react';
 import { Route } from './types';
 
@@ -95,6 +96,8 @@ function MainApp() {
       >
         <Plus size={20} />
       </button>
+
+      <GroupChat />
 
       <NoteInput
         isOpen={isInputOpen}
