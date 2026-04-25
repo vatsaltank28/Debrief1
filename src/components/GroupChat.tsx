@@ -69,10 +69,10 @@ export const GroupChat: React.FC = () => {
     <>
       <button
         onClick={() => setIsOpen(true)}
-        className={`fixed bottom-24 right-8 w-12 h-12 bg-blue-600 text-white rounded-full shadow-xl flex items-center justify-center hover:scale-105 active:scale-95 transition-all z-40 group ${isOpen ? 'hidden' : 'flex'}`}
+        className={`fixed bottom-20 right-4 sm:bottom-24 sm:right-8 w-12 h-12 bg-blue-600 text-white rounded-full shadow-xl flex items-center justify-center hover:scale-105 active:scale-95 transition-all z-40 group ${isOpen ? 'hidden' : 'flex'}`}
       >
         <MessageSquare size={20} />
-        <span className="absolute right-14 bg-gray-900 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
+        <span className="absolute right-14 bg-gray-900 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none hidden sm:block">
           Team Chat
         </span>
       </button>
@@ -83,7 +83,7 @@ export const GroupChat: React.FC = () => {
             initial={{ opacity: 0, y: 50, scale: 0.9 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 50, scale: 0.9 }}
-            className="fixed bottom-8 right-8 w-80 sm:w-96 h-[500px] max-h-[80vh] bg-white rounded-2xl shadow-2xl border border-gray-100 flex flex-col z-50 overflow-hidden"
+            className="fixed bottom-4 right-4 sm:bottom-8 sm:right-8 w-[calc(100vw-32px)] sm:w-96 h-[500px] max-h-[85vh] bg-white rounded-2xl shadow-xl border border-gray-100 flex flex-col z-50 overflow-hidden"
           >
             <div className="p-4 bg-gray-900 text-white flex justify-between items-center shrink-0">
               <div className="flex items-center gap-2">

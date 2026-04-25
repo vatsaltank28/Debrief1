@@ -91,7 +91,7 @@ function MainApp() {
       {/* FAB */}
       <button
         onClick={() => setIsInputOpen(true)}
-        className="fixed bottom-8 right-8 w-12 h-12 bg-gray-900 text-white rounded-full shadow-xl flex items-center justify-center hover:scale-105 active:scale-95 transition-all z-50"
+        className="fixed bottom-4 right-4 sm:bottom-8 sm:right-8 w-12 h-12 bg-gray-900 text-white rounded-full shadow-xl flex items-center justify-center hover:scale-105 active:scale-95 transition-all z-50"
         title="New note (⌥N)"
       >
         <Plus size={20} />
