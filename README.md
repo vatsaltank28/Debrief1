@@ -1,20 +1,79 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# 🧠 Debrief – AI-Powered Meeting Notes
 
-# Run and deploy your AI Studio app
+Debrief is a minimal, intelligent notes application that automatically categorizes meeting notes into structured insights like **Problems, Action Items, Decisions, and Discussions**.
 
-This contains everything you need to run your app locally.
+It transforms unstructured conversations into **clear, actionable information**, helping teams focus on what actually matters.
 
-View your app in AI Studio: https://ai.studio/apps/7c2c9ab5-ae37-47e5-a840-35ce4d3a1246
+---
 
-## Run Locally
+## ✨ Features
 
-**Prerequisites:**  Node.js
+### 🤖 AI Categorization
+- Automatically classifies notes into:
+  - Problem
+  - Action Item
+  - Decision
+  - Discussion
+- Uses keyword + contextual logic (expandable to full NLP)
 
+---
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+### 📊 Structured Dashboard
+- Clean, card-based UI
+- Sidebar navigation for quick filtering
+- Dedicated views for each category
+
+---
+
+### 📈 Summary Panel
+- Real-time overview of:
+  - Total Notes
+  - Action Items
+  - Decisions
+  - Problems
+  - Discussions
+
+---
+
+### 📝 Expandable Notes
+- Long notes are truncated
+- Expand on click for full content
+- Keeps UI clean and readable
+
+---
+
+### 🔗 Share Notes
+- Share individual notes easily
+- Useful for collaboration
+
+---
+
+### 🔐 Dummy Authentication
+- Basic login flow (UI only)
+- Placeholder for future real authentication
+
+---
+
+### 🚧 Upcoming Features
+- Group Chat System
+- Doubt / Threaded Discussions
+- Smarter AI Categorization (semantic understanding)
+- Real-time collaboration
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:** React + TypeScript  
+- **Styling:** Modern minimal UI (Apple Notes inspired)  
+- **State Management:** React state / custom logic  
+- **AI Logic:** Rule-based categorization (expandable to NLP models)
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repository
+```bash
+git clone git@github.com:jaydev-ops/debrief.git
+cd debrief
